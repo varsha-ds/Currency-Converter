@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include flag-icon CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5 shadow-lg">
+            <div class="card-header text-center bg-primary text-white">
+                <h2>Currency Converter</h2>
+            </div>
+            <div class="card-body">
+                <form id="currency-form">
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-currency">From:</label>
+                        <select class="form-control" id="from-currency" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-currency">To:</label>
+                        <select class="form-control" id="to-currency" required></select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Convert</button>
+                </form>
+                <div id="result" class="mt-3 text-center font-weight-bold"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
